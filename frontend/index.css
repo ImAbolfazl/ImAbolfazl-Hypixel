@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("../src/assets/MinecraftRegular.otf");
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../src/assets/main-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: blur(14px);
+  font-family: 'Minecraft';
+  color: white;
+}
+
+  .custom-scroll::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scroll::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+  }
+
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #3a3a3a, #1f1f1f);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
+  }
+
+  .custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #00e5ff, #007a99);
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.6);
+  }
+
+  .custom-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #2a2a2a transparent;
+  }
